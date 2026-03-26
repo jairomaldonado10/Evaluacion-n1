@@ -86,7 +86,7 @@ button {
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.5s;
 }
 
 .btn-white {
@@ -132,6 +132,7 @@ button {
     color: white;
     font-weight: bold;
     font-size: 14px;
+    transition: 0.5s;
 }
 
 .icon-1 { background-color: #007bff; }
@@ -174,7 +175,7 @@ button {
     padding: 15px;
     border-radius: 8px;
     flex: 1;
-    transition: all 0.3s ease;
+    transition: 0.5s;
 }
 
 .project-card h4 {
@@ -195,11 +196,16 @@ button {
 }
 
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+
+.skill-icon:hover {
+    transform: rotate(10deg) scale(1.2);
+    opacity: 0.8;
 }
 
 .project-card:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    transform: translateY(-5px);
-    border-bottom: 3px solid #4299e1;
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
 }

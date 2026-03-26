@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.header {
+    background-color: #e8f0fe;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    color: #2c3e50;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    border-bottom: 2px solid #e8f0fe;
+    justify-content: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+.nav a.active {
+    color: #333;
+}
+
+.hero {
+    background-color: #d1e3fa;
+    padding: 30px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.hero h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-white {
+    background-color: white;
+    color: #555;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-blue {
+    background-color: #4299e1;
+    color: white;
+}
+
+.middle-row {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.aside, .section {
+    background-color: #fdf6e3;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.habilidades h3, .proyectos-intro h3 {
+    margin-bottom: 15px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.skill-icon {
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.icon-1 { background-color: #007bff; }
+.icon-2 { background-color: #fd7e14; }
+.icon-3 { background-color: #ffc107; color: black; }
+.icon-4 { background-color: #0d6efd; }
+.icon-5 { background-color: #ffda6a; color: black; }
+.icon-6 { background-color: #212529; }
+
+.proyectos-intro p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.btn-yellow {
+    background-color: #ffc107;
+    color: #000;
+    width: 100%;
+}
+
+.article {
+    background-color: #d1e3fa;
+    padding: 30px;
+    margin: 0 20px 20px 20px;
+    border-radius: 12px;
+}
+
+.article h3 {
+    margin-bottom: 15px;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.project-card h4 {
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 12px;
+    color: #555;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f0f2f5;
+    color: #777;
+    font-size: 12px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    border-bottom: 3px solid #4299e1;
+}
